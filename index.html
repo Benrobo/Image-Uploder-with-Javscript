@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Upload</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+        <nav class="navbar-default bg-dark navbar-dark">
+            <a href="#" class="navbar-brand ml-4">
+                Signup
+            </a>
+        </nav>
+
+        <div class="container">
+            <div class="alert alert-danger mt-2">
+                <b>!</b>Pls fill in all fields
+            </div>
+
+            <div class="upload-form">
+                <div class="pic-cont">
+                    <img class="img">
+                </div>
+                <button class="btn btn-default add">
+                    +
+                    <input type="file" id="file">
+                </button>
+                <form class="form-group">
+                    <input type="text" placeholder="Firstname" class="form-control name">
+
+                    <input type="text" class="form-control secname" placeholder="Secondname">
+
+                    <input type="number" class="form-control numb" placeholder="(+234)45345345">
+
+                    <input type="password" class="form-control pwd" placeholder="*********">
+
+                    <label>Hide/See</label>
+                    <input type="checkbox" class="chk">
+
+                    <br>
+                    <button class="btn btn-success sub btn-block">Sign-up</button>
+                </form>
+            </div>
+            <div class="result-form">
+                <div class="pic-cont">
+                    <img class="img" id="img">
+                </div>
+                <h3 class="firstnameoup"></h3>
+                <h3 class="secnameoup"></h3>
+                <h3 class="numboup"></h3>
+                <h3 class="pwdoup"></h3>
+
+                <button class="btn btn-primary logout">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
